@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account — Student Portal</title>
+<style>
+/* ===== Neon Glow GOOD Theme ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #0f0f2d, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container {
+  width: 380px;
+  padding: 40px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 0 25px #00f0ff, inset 0 0 25px #00f0ff;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.8);}
+  to {opacity: 1; transform: scale(1);}
+}
+.container h2 {
+  margin-bottom: 25px;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
+}
+.input-box {
+  position: relative;
+  margin: 18px 0;
+}
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #00f0ff;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.input-box input:focus {
+  box-shadow: 0 0 10px #00f0ff;
+}
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00f0ff;
+  font-size: 18px;
+}
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #00f0ff;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+.btn:hover {
+  background: #0ff;
+  box-shadow: 0 0 15px #00f0ff, 0 0 40px #00f0ff;
+}
+.links {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.links a {
+  color: #00f0ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+body {
+  background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80') 
+              no-repeat center center/cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.links a:hover {
+  text-shadow: 0 0 8px #00f0ff;
+}
+footer {
+  position: absolute;
+  bottom: 15px;
+  font-size: 12px;
+  color: #777;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <form onsubmit="return createAccount(event)">
+      <div class="input-box">
+        <input type="text" id="fullname" placeholder="Full Name" required>
+        <i>👤</i>
+      </div>
+      <div class="input-box">
+        <input type="email" id="email" placeholder="Email Address" required>
+        <i>📧</i>
+      </div>
+      <div class="input-box">
+        <input type="text" id="username" placeholder="Choose Username" required>
+        <i>🧑‍💻</i>
+      </div>
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Create Password" required>
+        <i>🔒</i>
+      </div>
+      <button class="btn" type="submit">Create Account</button>
+      <div class="links">
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </form>
+  </div>
+
+  <footer>© 2025 Student Portal </footer>
+
+<script>
+function createAccount(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('fullname').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const user = document.getElementById('username').value.trim();
+  const pass = document.getElementById('password').value.trim();
+
+  if (name && email && user && pass) {
+    alert("🎉 Account created successfully for " + name + "!");
+    // Redirect to login page after successful signup
+    window.location.href = "login.html";
+  } else {
+    alert("⚠️ Please fill out all fields!");
+  }
+}
+</script>
+</body>
+</html>
