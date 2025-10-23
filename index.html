@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ====== SEO Optimization Code ====== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 🔍 Basic SEO -->
+<title>University of Loralai — Official Portal | UOLi</title>
+<meta name="description" content="Official University of Loralai student portal — explore departments, GPA calculator, assignment generator, and more student tools. Developed by Sajad Ullah Ziaratwall.">
+<meta name="keywords" content="University of Loralai, UOLi, Balochistan, Pakistan, University Portal, GPA Calculator, Assignment Front Page, Courses, Departments, Sajad Ullah, Student Tools, Online Learning, Admissions, Loralai University">
+<meta name="author" content="Sajad Ullah Ziaratwall">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourwebsite.com/">
+
+<!-- 📱 Social Media (Open Graph / Facebook) -->
+<meta property="og:title" content="University of Loralai — Official Student Portal">
+<meta property="og:description" content="Access all departments, tools, GPA calculator, and resources in one place.">
+<meta property="og:image" content="https://uoli.edu.pk/wp-content/uploads/2024/09/Final-Logo-1-1847x2048-1.png">
+<meta property="og:url" content="https://yourwebsite.com/">
+<meta property="og:type" content="website">
+
+<!-- 🐦 Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="University of Loralai — Official Portal">
+<meta name="twitter:description" content="Fast, glowing, and student-friendly UOLi portal with GPA calculator & tools.">
+<meta name="twitter:image" content="https://uoli.edu.pk/wp-content/uploads/2024/09/Final-Logo-1-1847x2048-1.png">
+
+<!-- 💻 Favicon -->
+<link rel="icon" href="https://uoli.edu.pk/wp-content/uploads/2024/09/Final-Logo-1-1847x2048-1.png" type="image/png">
+
+<!-- ⚡ Performance (Speed + Mobile) -->
+<meta name="theme-color" content="#00ffff">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- 📈 Structured Data for Google Search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "University of Loralai",
+  "url": "https://yourwebsite.com",
+  "logo": "https://uoli.edu.pk/wp-content/uploads/2024/09/Final-Logo-1-1847x2048-1.png",
+  "sameAs": [
+    "https://facebook.com/uoli.edu.pk",
+    "https://instagram.com/uoli.edu.pk",
+    "https://twitter.com/uoli_edu_pk"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Loralai",
+    "addressRegion": "Balochistan",
+    "addressCountry": "PK"
+  },
+  "founder": "Sajad Ullah Ziaratwall",
+  "description": "Official student and academic portal of the University of Loralai — explore departments, GPA calculators, and student tools."
+}
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>University of Loralai - Home</title>
+  <link href="https://uoli.edu.pk/wp-content/uploads/2024/09/Final-Logo-1-1847x2048-1.png" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+
+    body {
+      background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ===== Transparent Header ===== */
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 50px;
+      z-index: 10;
+      box-shadow: 0 0 25px rgba(0,255,255,0.2);
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: glowText 2.5s infinite ease-in-out;
+    }
+
+    /* ===== Sign In & Logout Buttons (Top Right) ===== */
+    .auth-buttons {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .auth-btn {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 15px 18px;
+      border-radius: 20px;
+      background: linear-gradient(90deg, #00ffff, #0077ff);
+      color: #000;
+      box-shadow: 0 0 15px #00ffff;
+      transition: all 0.3s ease;
+    }
+
+    .auth-btn:hover {
+      background: linear-gradient(90deg, #ff00ff, #00ffff);
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffff, 0 0 40px #ff00ff;
+    }
+
+    /* ===== Layout ===== */
+    main {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      margin-top: 100px;
+      padding: 40px 60px;
+      gap: 40px;
+    }
+
+    .departments, .tools {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      padding: 30px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0,255,255,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #00ffff;
+      text-shadow: 0 0 20px #00ffff;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 12px 0;
+      padding: 14px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      background: linear-gradient(90deg, #00ffff, #0077ff);
+      color: #000;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      background: linear-gradient(90deg, #ff00ff, #00ffff);
+      box-shadow: 0 0 35px #00ffff, 0 0 50px #ff00ff;
+      color: #fff;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 15px;
+      color: #ccc;
+      font-size: 0.9rem;
+      box-shadow: 0 0 20px rgba(0,255,255,0.1);
+    }
+
+    @keyframes glowText {
+      0% { text-shadow: 0 0 10px #00ffff; }
+      50% { text-shadow: 0 0 25px #00ffff, 0 0 45px #0077ff; }
+      100% { text-shadow: 0 0 10px #00ffff; }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- ======== Neon Chatbot (GOOD Theme) ======== -->
+<div id="chatbot-icon" onclick="toggleChat()">
+  💬
+</div>
+
+<div id="chatbot-box">
+  <div class="chat-header">🤖 UOLi Assistant</div>
+  <div id="chat-content">
+    <div class="bot-message">Hi there! 👋<br>How can I help you today?</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message..." onkeydown="if(event.key==='Enter'){sendMessage()}">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
+
+<style>
+  /* ===== Floating Chat Icon ===== */
+  #chatbot-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(90deg, #00ffff, #0077ff);
+    color: #000;
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #00ffff;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  #chatbot-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #00ffff, 0 0 60px #ff00ff;
+  }
+
+  /* ===== Chat Box ===== */
+  #chatbot-box {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    width: 320px;
+    max-height: 450px;
+    display: none;
+    flex-direction: column;
+    background: rgba(0,0,0,0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,255,255,0.3);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.4s ease;
+    z-index: 998;
+  }
+
+  .chat-header {
+    background: linear-gradient(90deg, #00ffff, #0077ff);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 0 20px #00ffff;
+  }
+
+  #chat-content {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+
+  .chat-input {
+    display: flex;
+    border-top: 1px solid rgba(0,255,255,0.3);
+  }
+
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+  }
+
+  .chat-input button {
+    background: linear-gradient(90deg, #00ffff, #0077ff);
+    border: none;
+    color: #000;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .user-message, .bot-message {
+    background: rgba(0,255,255,0.15);
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin: 8px 0;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  }
+
+  .user-message {
+    text-align: right;
+    background: rgba(255,0,255,0.15);
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+  }
+</style>
+
+<script>
+  function toggleChat() {
+    const box = document.getElementById('chatbot-box');
+    box.style.display = box.style.display === 'flex' ? 'none' : 'flex';
+  }
+
+  function sendMessage() {
+    const input = document.getElementById("userInput");
+    const chat = document.getElementById("chat-content");
+    const message = input.value.trim();
+    if (message === "") return;
+
+    // Show user message
+    const userMsg = document.createElement("div");
+    userMsg.className = "user-message";
+    userMsg.textContent = message;
+    chat.appendChild(userMsg);
+
+    input.value = "";
+    chat.scrollTop = chat.scrollHeight;
+
+    // Generate bot reply
+    setTimeout(() => {
+      const botMsg = document.createElement("div");
+      botMsg.className = "bot-message";
+      botMsg.innerHTML = getBotResponse(message);
+      chat.appendChild(botMsg);
+      chat.scrollTop = chat.scrollHeight;
+    }, 400);
+  }
+
+  function getBotResponse(input) {
+    input = input.toLowerCase();
+
+    if (input.includes("hello") || input.includes("hi")) {
+      return "Hello! 👋 How can I help you today?";
+    } else if (input.includes("course") || input.includes("department")) {
+      return "You can explore all departments and courses in the main section 📚";
+    } else if (input.includes("login") || input.includes("account")) {
+      return "You can sign in using the 🔐 Login button at the top-right corner.";
+    } else if (input.includes("contact")) {
+      return "You can contact us via WhatsApp 📱 +92 300 1234567 or email 📧 info@yourwebsite.com";
+    } else if (input.includes("bye")) {
+      return "Goodbye! 👋 Have a great day ahead 💫";
+    } else {
+      return "I’m here to assist you! Try asking about courses, login, or contact info. 💬";
+    }
+  }
+</script>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="auth-buttons">
+      <a href="login.html" class="auth-btn">🔐 Login       </a>
+      <a href="logout.html" class="auth-btn">🚪 Logout</a>
+    </div>
+
+    <h1>
+      <pre>                                               <img height="500" src="https://uoli.edu.pk/wp-content/uploads/2024/09/Final-Logo-1-1847x2048-1.png" alt="UOLI Logo">  University of Loralai 💫
+      </pre>
+    </h1>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <div class="departments">
+      <h2>🎓UOLi Departments info </h2>
+      <a href="https://uoli.edu.pk/faculty-and-staff/computer-science/" class="btn">💻 Computer Science</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/commerce/" class="btn">📊 Commerce</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/english/" class="btn">📘 English</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/education/" class="btn">📖 Education</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/sociology/" class="btn">👥 Sociology</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/economics/" class="btn">💰 Economics</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/political-science/" class="btn">🏛 Political Science</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/pashto/" class="btn">🗣️ Pashto Department</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/islamic-studies/" class="btn">☪️ Islamic Studies</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/mathematics/" class="btn">📐 Mathematics</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/zoology/" class="btn">🧬 Zoology</a>
+      <a href="https://uoli.edu.pk/faculty-and-staff/management-sciences/" class="btn">💼 Management Sciences</a>
+    </div>
+
+    <div class="tools">
+      <h2>⚙️ Student Tools</h2>
+      <a href="frontpage.html" class="btn">📘 Generate UOLi Assignment Front Page</a>
+      <a href="gpa.html" class="btn">🎓 GPA Calculator</a>
+      <a href="https://uoli.edu.pk/" class="btn">🌐 Official UOLI Website</a>
+      <a href="evnets.html" class="btn">📅 Events</a>
+      <a href="language.html" class="btn">💬 Learn Languages</a>
+    </div>
+  </main>
+
+  <footer>
+   <div style="text-align:center; line-height:1.8; font-size:1rem;">
+
+  <h3 style="color:#00ffff; text-shadow:0 0 15px #00ffff;">🌐 Connect With Us</h3>
+
+  <p>
+    📞 <strong>WhatsApp:</strong>
+    <a href="https://wa.me/363765236" target="_blank" 
+       style="color:#00ffff; text-decoration:none; text-shadow:0 0 10px #00ffff;">
+       +92 3363765236
+    </a>
+  </p>
+
+  <p>
+    ✉️ <strong>gmail:</strong>
+    <a href="mailto:info@yourwebsite.com" 
+       style="color:#00ffff; text-decoration:none; text-shadow:0 0 10px #00ffff;">
+       sajadullah241@gmail.com
+    </a>
+  </p>
+
+  <p>
+    📍 <strong>Curruent Address:</strong> University of Loralai, Balochistan, Pakistan
+  </p>
+
+  <p style="margin-top:10px;">
+    <a href="https://facebook.com/" target="_blank" style="margin:0 10px; color:#00ffff; text-decoration:none;">🌐 Facebook</a> |
+    <a href="https://instagram.com/" target="_blank" style="margin:0 10px; color:#ff00ff; text-decoration:none;">📸 Instagram</a> |
+    <a href="https://youtube.com/" target="_blank" style="margin:0 10px; color:#ff0000; text-decoration:none;">▶️ YouTube</a> |
+    <a href="https://twitter.com/" target="_blank" style="margin:0 10px; color:#00acee; text-decoration:none;">🐦 Twitter</a> |
+    <a href="https://linkedin.com/" target="_blank" style="margin:0 10px; color:#00ffff; text-decoration:none;">💼 LinkedIn</a>
+  </p>
+
+  <p style="color:#ccc; font-size:0.9rem; margin-top:10px;">
+    💫 Developed by <span style="color:#00ffff;">Sajad Ullah Ziaratwall</span> | All Rights Reserved © 2025
+  </p>
+
+</div>
+
+  </footer>
+</body>
+</html>
